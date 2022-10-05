@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
-    "server": "http-server public"
+    "server": "http-server public",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
     "cypress": "^4.2.0"
   },
   "dependencies": {
-    "http-server": "^0.12.1"
-  }
+    "http-server": "^0.13.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
