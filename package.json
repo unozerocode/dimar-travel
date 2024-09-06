@@ -24,6 +24,6 @@
     "cypress": "^4.2.0"
   },
   "dependencies": {
-    "http-server": "^0.12.1"
+    "http-server": "^14.0.0"
   }
 }
